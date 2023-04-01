@@ -13,7 +13,7 @@
         <ul>
           <li v-for="item in historico" :key="item">Você fez uma pause em: {{item}} </li>
         </ul>
-        <button @click="historico = []"> Limpar Histórico</button>
+        <button v-if="historico.length > 0" @click="historico = []"> Limpar Histórico</button>
       </div>
 
 
